@@ -1,13 +1,19 @@
 package main
 
-import "fmt"
-func addNumbers(nos ...int) int{
-	sum:=0
-	for _,i:=range nos{
-		sum=sum+i
+func addNumbers(nos ...int) int {
+	sum := 0
+	for _, i := range nos {
+		sum = sum + i
 	}
 	return sum
 }
-func main()  {
-	fmt.Println(addNumbers(1,2,3,4,5))
+func sum() interface{} {
+	var ar = [2]int{2, 4}
+	return ar
+}
+func main() {
+	ar := sum()
+	for i := range ar {
+
+	}
 }
